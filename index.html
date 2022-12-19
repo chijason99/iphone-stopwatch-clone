@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./script.js" type="module"></script>
+    <title>Stop-watch</title>
+  </head>
+  <body>
+    <main>
+        <section class="wrapper">
+            <div class="stopwatch">
+                <span class="stopwatch-text">00:00.00</span>
+                <div class="btn-container">
+                  <button class="start btn">Start</button>
+                  <button class="lap btn">Lap</button>
+                </div>
+              </div>
+        </section>
+        <section>
+            <ul class="lap-time-holder">
+            </ul>
+        </section>
+    </main>
+    <template id="lap-time-section">
+        <li class="lap-time-item">
+          <span data-lap-num></span>
+          <span data-lap-time></span>
+        </li>
+    </template>
+  </body>
+</html>
